@@ -1,0 +1,41 @@
+.col-sm{
+    height: 310px;
+    width: 310px;
+    background-color: #555;
+    border-radius: 50%;
+    text-align: center;
+    overflow: auto;
+    shape-margin: auto;
+    font-size: 0.9em;
+    
+}
+h1{
+  height: 65px;
+  width: 500px; 
+  background-color: #E5AEF4;
+  border-radius: 50%;
+}
+h3{
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+p{
+    margin-top: 20px;
+}
+.well{
+    background-color: #E5AEF4;
+    margin: 50px; 
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border: hidden;
+}
+.navbar{
+    background-color: #92659E;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
