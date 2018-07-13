@@ -1,48 +1,90 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="OMMwall.css">
-    </head>
-    <body style="background-color:#F2C1FF">
-        <div class="jumbotron text-center" style="background-color: #BAA4D1">
-            <div class="container-fluid" id="wallpost"><textarea placeholder="What's new?" autofocus></textarea></div>
+
+<head>
+    <style>
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href=OMMwall.css>
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+</head>
+
+<body class="grad_purple">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">Out My Mind&nbsp
+                <sub>Free Yourself&nbsp
+                    <i class="em em-grin"></i>
+                </sub>
+            </a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Media</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-dark" style="color:#C386EA" type="submit">Search OMM&nbsp
+                    <i class="em em-sleuth_or_spy"></i>
+                </button>
+            </form>
         </div>
-                <div class="container-fluid" style="margin: auto">
-                    <div class="row" style="margin:20px">
-                      <div class="col-sm" style="margin:2px; background-color: #C386EA">
-                        <h3>Photos</h3>
-                        <p>Click here to manage your profile and public photos. 
-                            picture editing and filtering are available too! Create
-                            your best creation, Out of <strong>YOUR</strong> Mind!
-                        </p>
-                      </div>
-                      <div class="col-sm" style="margin:2px; background-color: #E5AEF4">
-                        <h3>Music</h3>
-                        <p>There are many different types of music,
-                            even your own potentially! Upload and manage your online music collection 
-                            here!
-                        </p>
-                      </div>
-                      <div class="col-sm" style="margin:2px; background-color: #C386EA">
-                        <h3>Blogs</h3> 
-                        <p>Saw a funny situation on the bus, or are you working on a 
-                            journalism project? Free your mind in your blog space!
-                        </p>
-                      </div>
-                      <div class="col-sm" style="margin:2px; background-color: #E5AEF4">
-                        <h3>Video</h3> 
-                        <p>Whether it is a video shoot, or just old memories this is the spot 
-                            for it! Feel free to upload, download, or live stream video right from 
-                            your device
-                        </p>
-                    </div>
-                    </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid; text-center" style="background: linear-gradient(to right, #9885A7, #E5AEF4)">
+        <div class="container-fluid">
+            <section>
+                <div class="text">
+                    <img src="avatar.png" />
+                    <textarea placeholder="Free Your Mind!"></textarea>
+                    <input type="submit" value="post" />
+                </div>
+            </section>
         </div>
-    </body>
+        <div class="overlay"></div>
+    </div>
+    <div class="container-fluid" style="margin: auto">
+        <div class="row" style="margin:auto">
+            <div class="col-sm" style="margin: auto; background-color: #C386EA">
+                <h3>Photos&nbsp;
+                    <i class="em em-camera_with_flash"></i>
+                </h3>
+            </div>
+            <div class="col-sm" style="margin: auto; background-color: #E5AEF4">
+                <h3>Music&nbsp;
+                    <i class="em em-musical_note"></i>
+                </h3>
+            </div>
+            <div class="col-sm" style="margin: auto; background-color: #C386EA">
+                <h3>Blogs&nbsp;
+                    <i class="em em-newspaper"></i>
+                </h3>
+            </div>
+            <div class="col-sm" style="margin: auto; background-color: #E5AEF4">
+                <h3>Video&nbsp;
+                    <i class="em em-movie_camera"></i>
+                </h3>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
+
 </html>
