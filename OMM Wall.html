@@ -21,12 +21,12 @@
 
         section div {
             width: auto;
-            margin: 0px auto;
-            background-color: #fff;
+            margin: auto;
+            background-color: #EEC195;
             overflow: auto;
             padding: 20px;
             border-radius: 3px;
-            box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
             z-index: 3;
             position: relative;
         }
@@ -41,11 +41,12 @@
             width: auto;
             height: auto;
             border: none;
+            margin-top: 10px;
             padding: 5px 10px;
             font-family: arial;
             resize: none;
             outline: none;
-            border-bottom: 2px solid #9885A7;
+            border-bottom: 5px solid #9B86A5;
         }
 
         textarea::-webkit-scrollbar {
@@ -62,7 +63,7 @@
             float: right;
             margin: 15px 10px auto auto;
             border: none;
-            background-color: #9885A7;
+            background-color: #9B86A5;
             color: #fff;
             font-weight: bold;
             padding: 10px 15px;
@@ -105,7 +106,7 @@
         h1 {
             height: 65px;
             width: 500px;
-            background-color: #E5AEF4;
+            background-color: #9B86A5;
             border-radius: 50%;
         }
 
@@ -114,7 +115,7 @@
             font-size: 1.5em;
         }
 
-        
+
 
         ul {
             list-style-type: none;
@@ -122,88 +123,77 @@
             padding: 0;
             overflow: hidden;
         }
+        #newsfeed{
+            position: fixed;
+            margin: auto;
+            border: 5px #9B86A5;
+            width: 50%;
+        }
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
 
 
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body style="background-color: #CD7F32">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: sticky">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">Out My Mind&nbsp
-                <sub>Free Yourself&nbsp
-                    <i class="em em-grin"></i>
-                </sub>
-            </a>
+            <a class="navbar-brand" href="OMM Wall.html">Out My Mind</a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
+                <li class="nav-item">
+                    <a class="nav-link" href="OMM User.html">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Blogs</a>
+                    <a class="nav-link" href="OMM Blogs.html">Blogs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Media</a>
+                    <a class="nav-link" href="OMM Media.html">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="OMM Messages.html">Messages</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-dark" style="color:#C386EA" type="submit">Search OMM&nbsp
+                <button class="btn btn-dark" style="color:#9B86A5" type="submit">Search OMM&nbsp
                     <i class="em em-sleuth_or_spy"></i>
                 </button>
             </form>
         </div>
     </nav>
+
     <div class="jumbotron jumbotron-fluid; text-center">
-        <div class="container-fluid">
+        <div class="container-fluid text-center">
             <section>
-                <div class="text">
+                <div class="text container-fluid">
                     <img src="avatar.png" />
                     <textarea placeholder="Free Your Mind!"></textarea>
-                    <input type="submit" value="post" />
+                    <input type="submit" value="Post" />
                 </div>
             </section>
         </div>
         <div class="overlay"></div>
     </div>
-    <div class="container-fluid" style="margin: auto">
-        <div class="row" style="margin:auto">
-            <div class="col-sm" style="margin: auto; background-color: #C386EA">
-                <h3>Photos&nbsp;
-                    <i class="em em-camera_with_flash"></i>
-                </h3>
-            </div>
-            <div class="col-sm" style="margin: auto; background-color: #E5AEF4">
-                <h3>Music&nbsp;
-                    <i class="em em-musical_note"></i>
-                </h3>
-            </div>
-            <div class="col-sm" style="margin: auto; background-color: #C386EA">
-                <h3>Blogs&nbsp;
-                    <i class="em em-newspaper"></i>
-                </h3>
-            </div>
-            <div class="col-sm" style="margin: auto; background-color: #E5AEF4">
-                <h3>Video&nbsp;
-                    <i class="em em-movie_camera"></i>
-                </h3>
-            </div>
-        </div>
+    <div class="container-fluid text-center">
+        <p>News will show here</p>
     </div>
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+
+
 </body>
 
 </html>
