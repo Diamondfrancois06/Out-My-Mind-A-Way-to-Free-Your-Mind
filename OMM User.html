@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .avatar {
+            height: 120px;
+            width: 120px;
+            background-color: grey;
+            border: solid 5px #EEC195;
+            border-radius: 10px;
+
+        }
+
+        .dropdown:hover>.dropdown-menu {
+            display: block;
+        }
+
+
+        .yourposts,
+        .newsfeed,
+        .trending {
+            background-color: grey;
+            min-width: 200px;
+            min-height: 400px;
+            overflow: auto;
+            border-radius: 10px;
+        }
+
+        body {
+            background-color: #EEC195;
+        }
+
+        ads {
+            margin-top: 10px;
+        }
+
+        .api1,
+        .api2,
+        .api3 {
+            background-color: grey;
+            min-width: 200px;
+            min-height: 400px;
+            overflow: auto;
+            border-radius: 10px;
+        }
+
+        #demo {
+            background-color: #EEC195;
+        }
+
+        #ads {
+            background-color: #EEC195;
+        }
+
+        hr {
+            background-color: #9B86A5;
+        }
+    </style>
+
+    <script>
+        $document.ready(function () {
+            $('#ads').carousel({
+                interval: true
+            });
+        });
+    </script>
+
+    <meta charset="utf-8" />
+    <title>OMM: User Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color: #EEC195">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: sticky">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="OMM Wall.html">Out My Mind</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="OMM User.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="OMM Blogs.html">Blogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="OMM Media.html">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="OMM Messages.html">Messages</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-dark" style="color:#9B86A5" type="submit">Search OMM &nbsp;
+                    <i class="em em-sleuth_or_spy"></i>
+                </button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center container-fluid" style="margin-bottom:0; background-color: #CD7F32;">
+        <div class="avatar"></div>
+    </div>
+
+    <hr />
+
+    <div id="demo" class="carousel slide" data-ride="carousel" data-interval="false">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="yourposts">
+                    <p>Your Site Posts</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="newsfeed">
+                    <p>Friends and Suggest</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="trending">
+                    <p>Trending Posts/News</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <hr />
+
+
+    <div id="apis" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#apis" data-slide-to="0" class="active"></li>
+            <li data-target="#apis" data-slide-to="1"></li>
+            <li data-target="#apis" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="api1">
+                    <p>Uber API</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="api2">
+                    <p>Kayak API</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="api3">
+                    <p>Ticketmaster API</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar bottom navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">About OMM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign Out</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="OMM Devs.html">Devs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="OMM Coming.html">Coming</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="OMM Contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>

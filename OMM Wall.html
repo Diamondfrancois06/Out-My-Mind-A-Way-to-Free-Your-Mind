@@ -9,13 +9,53 @@
             box-sizing: border-box;
         }
 
+        .dropdown:hover>.dropdown-menu {
+            display: block;
+        }
+
         body {
             margin: 0;
             background-color: #f1f1f1;
         }
 
+        ads {
+            margin-top: 10px;
+        }
+
+        .api1,
+        .api2,
+        .api3 {
+            background-color: grey;
+            min-width: 200px;
+            min-height: 400px;
+            overflow: auto;
+            border-radius: 10px;
+        }
+
+        #demo {
+            background-color: #EEC195;
+        }
+
+        #ads {
+            background-color: #EEC195;
+        }
+
+        hr {
+            background-color: #9B86A5;
+        }
+
+        .newsfeed,
+        .video,
+        .photo_blog {
+            background-color: grey;
+            min-width: 200px;
+            min-height: 400px;
+            overflow: auto;
+            border-radius: 10px;
+        }
+
         section {
-            width: 90%;
+            width: auto;
             margin: auto;
         }
 
@@ -40,13 +80,14 @@
         section div textarea {
             width: auto;
             height: auto;
+            border-radius: 15px;
             border: none;
             margin-top: 10px;
             padding: 5px 10px;
             font-family: arial;
             resize: none;
             outline: none;
-            border-bottom: 5px solid #9B86A5;
+            border-bottom: 3px solid #9B86A5;
         }
 
         textarea::-webkit-scrollbar {
@@ -123,26 +164,33 @@
             padding: 0;
             overflow: hidden;
         }
-        #newsfeed{
+
+        #newsfeed {
             position: fixed;
             margin: auto;
             border: 5px #9B86A5;
             width: 50%;
         }
     </style>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
 
 
 </head>
 
-<body style="background-color: #CD7F32">
+<body style="background-color: #EEC195">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: sticky">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -180,16 +228,94 @@
             <section>
                 <div class="text container-fluid">
                     <img src="avatar.png" />
-                    <textarea placeholder="Free Your Mind!"></textarea>
+                    <textarea style="min-width: 200px;" placeholder="Free Your Mind!"></textarea>
                     <input type="submit" value="Post" />
                 </div>
             </section>
         </div>
         <div class="overlay"></div>
     </div>
-    <div class="container-fluid text-center">
-        <p>News will show here</p>
+
+    <div id="main" class="carousel slide" data-ride="carousel" data-interval="false">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#main" data-slide-to="0" class="active"></li>
+            <li data-target="#main" data-slide-to="1"></li>
+            <li data-target="#main" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="newsfeed">
+                    <p>All Site Posts</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="video">
+                    <p>Popular Videos</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="photo_blog">
+                    <p>Popular Photos & Blogs</p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <hr />
+
+
+    <div id="apis" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#apis" data-slide-to="0" class="active"></li>
+            <li data-target="#apis" data-slide-to="1"></li>
+            <li data-target="#apis" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="api1">
+                    <p>Uber API</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="api2">
+                    <p>Kayak API</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="api3">
+                    <p>Ticketmaster API</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="navbar bottom navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">About OMM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign Out</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="OMM Devs.html">Devs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="OMM Coming.html">Coming</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="OMM Contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
 
 
